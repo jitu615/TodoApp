@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4642E65D2671211200BED6A8 /* TaskListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4642E65C2671211200BED6A8 /* TaskListModel.swift */; };
+		464FD1DD26711A90004E4954 /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464FD1DB26711A90004E4954 /* Task+CoreDataClass.swift */; };
+		464FD1DE26711A90004E4954 /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464FD1DC26711A90004E4954 /* Task+CoreDataProperties.swift */; };
 		46515E4C266FF6A500202122 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E4B266FF6A500202122 /* AppDelegate.swift */; };
 		46515E4E266FF6A500202122 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E4D266FF6A500202122 /* SceneDelegate.swift */; };
 		46515E50266FF6A500202122 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E4F266FF6A500202122 /* ViewController.swift */; };
@@ -14,9 +17,18 @@
 		46515E56266FF6A500202122 /* ToDoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46515E54266FF6A500202122 /* ToDoApp.xcdatamodeld */; };
 		46515E58266FF6A600202122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46515E57266FF6A600202122 /* Assets.xcassets */; };
 		46515E5B266FF6A600202122 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46515E59266FF6A600202122 /* LaunchScreen.storyboard */; };
+		46515E65266FF6E200202122 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E64266FF6E200202122 /* TaskListViewController.swift */; };
+		46515E6A266FF83400202122 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E69266FF83400202122 /* Extension.swift */; };
+		46515E71266FF9E900202122 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46515E6F266FF9E900202122 /* TaskTableViewCell.swift */; };
+		46515E72266FF9E900202122 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46515E70266FF9E900202122 /* TaskTableViewCell.xib */; };
+		4670E04526707D080060A429 /* PersisttancyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670E04426707D080060A429 /* PersisttancyManager.swift */; };
+		4670E04E267086C10060A429 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4670E04D267086C10060A429 /* TaskListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4642E65C2671211200BED6A8 /* TaskListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListModel.swift; sourceTree = "<group>"; };
+		464FD1DB26711A90004E4954 /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		464FD1DC26711A90004E4954 /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		46515E48266FF6A500202122 /* ToDoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46515E4B266FF6A500202122 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46515E4D266FF6A500202122 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +38,12 @@
 		46515E57266FF6A600202122 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46515E5A266FF6A600202122 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46515E5C266FF6A600202122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46515E64266FF6E200202122 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		46515E69266FF83400202122 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		46515E6F266FF9E900202122 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		46515E70266FF9E900202122 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
+		4670E04426707D080060A429 /* PersisttancyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersisttancyManager.swift; sourceTree = "<group>"; };
+		4670E04D267086C10060A429 /* TaskListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +79,11 @@
 				46515E4B266FF6A500202122 /* AppDelegate.swift */,
 				46515E4D266FF6A500202122 /* SceneDelegate.swift */,
 				46515E4F266FF6A500202122 /* ViewController.swift */,
+				4670E04C267086AC0060A429 /* ViewModel */,
+				4670E04026707C590060A429 /* Model */,
+				46515E6E266FF9C500202122 /* View */,
+				46515E68266FF81900202122 /* Utils */,
+				46515E63266FF6BF00202122 /* Controller */,
 				46515E51266FF6A500202122 /* Main.storyboard */,
 				46515E57266FF6A600202122 /* Assets.xcassets */,
 				46515E59266FF6A600202122 /* LaunchScreen.storyboard */,
@@ -68,6 +91,50 @@
 				46515E54266FF6A500202122 /* ToDoApp.xcdatamodeld */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		46515E63266FF6BF00202122 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				46515E64266FF6E200202122 /* TaskListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		46515E68266FF81900202122 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				46515E69266FF83400202122 /* Extension.swift */,
+				4670E04426707D080060A429 /* PersisttancyManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		46515E6E266FF9C500202122 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				46515E6F266FF9E900202122 /* TaskTableViewCell.swift */,
+				46515E70266FF9E900202122 /* TaskTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4670E04026707C590060A429 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				464FD1DB26711A90004E4954 /* Task+CoreDataClass.swift */,
+				464FD1DC26711A90004E4954 /* Task+CoreDataProperties.swift */,
+				4642E65C2671211200BED6A8 /* TaskListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4670E04C267086AC0060A429 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4670E04D267086C10060A429 /* TaskListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46515E72266FF9E900202122 /* TaskTableViewCell.xib in Resources */,
 				46515E5B266FF6A600202122 /* LaunchScreen.storyboard in Resources */,
 				46515E58266FF6A600202122 /* Assets.xcassets in Resources */,
 				46515E53266FF6A500202122 /* Main.storyboard in Resources */,
@@ -140,10 +208,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4670E04526707D080060A429 /* PersisttancyManager.swift in Sources */,
+				46515E71266FF9E900202122 /* TaskTableViewCell.swift in Sources */,
 				46515E50266FF6A500202122 /* ViewController.swift in Sources */,
 				46515E4C266FF6A500202122 /* AppDelegate.swift in Sources */,
+				464FD1DE26711A90004E4954 /* Task+CoreDataProperties.swift in Sources */,
 				46515E4E266FF6A500202122 /* SceneDelegate.swift in Sources */,
+				4642E65D2671211200BED6A8 /* TaskListModel.swift in Sources */,
+				46515E6A266FF83400202122 /* Extension.swift in Sources */,
+				464FD1DD26711A90004E4954 /* Task+CoreDataClass.swift in Sources */,
+				4670E04E267086C10060A429 /* TaskListViewModel.swift in Sources */,
 				46515E56266FF6A500202122 /* ToDoApp.xcdatamodeld in Sources */,
+				46515E65266FF6E200202122 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

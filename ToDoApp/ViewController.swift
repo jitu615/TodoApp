@@ -9,9 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    private var viewModel = TaskListViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        viewModel.saveTask()
+        viewModel.retreiveTask()
     }
 
 
