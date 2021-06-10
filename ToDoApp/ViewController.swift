@@ -9,16 +9,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    private var viewModel = TaskListViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        viewModel.saveTask()
-        viewModel.retreiveTask()
+        self.title = "To Do App"
     }
 
-
+    @IBAction func btnProceedAction(_ sender: Any) {
+        if let listVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "TaskListViewController") as? TaskListViewController{
+            self.navigationController?.pushViewController(listVC, animated: true)
+        }
+    }
+    
 }
 

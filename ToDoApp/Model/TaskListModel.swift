@@ -6,9 +6,9 @@
 //
 
 import Foundation
+import CoreData
 
-
-struct TaskListModel {
+public struct TaskListModel {
     var sectionName: String
     var tasks: [Task]
 }

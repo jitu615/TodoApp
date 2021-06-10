@@ -37,13 +37,13 @@ class PersistancyManager: NSObject{
     public func fetchTasks(predicate: NSPredicate?,  completion: @escaping (Result<[Task], Error>) -> Void){
         let request: NSFetchRequest<Task> = Task.fetchRequest()
         
-        request.sortDescriptors = [NSSortDescriptor(key: "created", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "createdAt", ascending: true)]
         request.predicate = predicate
         do {
-            let tasks = try container.viewContext.fetch(request)
+            let tasks = try getContext().fetch(request)
             completion(.success(tasks))
         } catch {
-            completion(.failure(CustomError.CoreDataError))
+           // completion(.failure(CustomError.CoreDataError))
         }
     }
     
@@ -67,14 +67,9 @@ class PersistancyManager: NSObject{
     }
     
     //MARK:-DELETE RECORD
-    func deleteTask(_ object: ManagedTask){
-        
-        getContext().delete(object)
-        do{
-            try getContext().save()
-        }catch let error as NSError{
-            print("Could not Delete. \(error), \(error.userInfo)")
-        }
+    public func deleteTask(task: Task) {
+        getContext().delete(task)
+        try? getContext().save()
     }
     
     //MARK:-CHECK FOR RECORD  IF ALREADY EXIST
